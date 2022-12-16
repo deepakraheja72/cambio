@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Cambio - Startup Agency and Digital Marketing Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Template default CSS
+2. Header style
+3. Banner style
+4. About style
+5. Services style
+6. Pricing style
+7. Testimonials style
+7. Blog style
+7. Contact style
+7. Footer style
+
+*/
+
+/*----------------------------------------*/
+/*  1. Template default CSS
+/*----------------------------------------*/
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   background-color: #ffffff;
+   line-height: 24px;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   font-family: 'Nunito', sans-serif;
+   color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a,
+button {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+a,
+button,
+img,
+input,
+span {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+a {
+   transition: all 0.3s linear;
+}
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------*/
+/*  2. Header style
+/*----------------------------------------*/
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+}
+
+.main-nav-fixed {
+   box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 9;
+   width: 100%;
+   background-color: #fff;
+}
+
+.middle-container {
+   padding: 80px 0;
+}
+
+.navigation {
+   padding: 15px 0;
+}
+.navbar-toggler {
+   position: relative;
+   float: right;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+}
+
+.navbar-toggler:focus {
+   box-shadow: none;
+}
+
+.navbar-toggler.collapsed span:nth-child(2),
+.navbar-toggler.collapsed span:nth-child(4) {
+   transform: rotate(0);
+}
+
+.navbar-light .navbar-toggler .icon-bar {
+   background-color: #222;
+}
+
+.navbar-dark .navbar-toggler .icon-bar {
+   background-color: #fff;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+   margin-top: 4px;
+}
+
+.navbar-toggler.collapsed span:nth-child(2),
+.navbar-toggler.collapsed span:nth-child(4) {
+   transform: rotate(0);
+}
+
+.navbar-toggler span:nth-child(2) {
+   transform: rotate(45deg);
+   transform-origin: 10% 10%;
+}
+
+.navbar-toggler span:nth-child(4) {
+   transform: rotate(-45deg);
+   transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed span:nth-child(3) {
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+   opacity: 0;
+}
+
+.navbar-toggler span.icon-bar {
+   transition: all 0.15s;
+}
+
+.navbar-toggler .icon-bar {
+   display: block;
+   width: 22px;
+   height: 2px;
+   border-radius: 1px;
+}
+
+.navbar-light .navbar-toggler {
+   border-color: rgba(0, 0, 0, .8);
+}
+
+.navbar-dark .navbar-toggler {
+   border-color: rgba(255, 255, 255, .5);
+}
+
+.slick-slide:focus {
+   outline: none;
+}
+.navbar-collapse {
+   justify-content: flex-end;
+}
+.navigation .navbar-nav .nav-link {
+   font-size:16px;
+   color: #000;
+   font-weight: bold;
+   opacity: 1;
+   text-transform: uppercase;
+   padding: 1vw 1.4vw;
+   position: relative; 
+}
+.navigation .navbar-nav .nav-link.active, .navigation .navbar-nav .nav-link:hover {
+   color: #114DC2;
+}
+.navigation .navbar-nav .nav-link.active:after {
+   content: '';
+   background: url(../images/menu-active.png) no-repeat center bottom;
+   position: absolute;
+   bottom: 0;
+   width: 7px;
+   height: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------*/
+/*  2. Footer style
+/*----------------------------------------*/
+.footer {
+   background-color: #1e4158;
+   padding: 30px 0;
+   color: #afcfe4;
+}
+
+.footer-copyright {
+   background-color: #122e40;
+   padding: 30px 0;
+   font-size: 13px;
+   color: #b2baca;
+}
+
+.footer-copyright span {
+   color: #fff;
+}
+
+
+/* Scroll to top */
+.scroll_to_top {
+   width: 22px;
+   height: 25px;
+   position: fixed;
+   z-index: 10;
+   bottom: 45px;
+   right: 5%;
+   opacity: 0.9;
+   filter: alpha(opacity=90);
+   display: none;
+   -moz-transition: 0.5s ease all;
+   -webkit-transition: 0.5s ease all;
+   -o-transition: 0.5s ease all;
+   transition: 0.5s ease all;
+   outline: none;
+}
+
+.scroll_to_top i {
+   display: inline-block;
+   width: 3em;
+   height: 3em;
+   border: 0.3em solid #000000;
+   border-radius: 50%;
+   margin-right: 0.75em;
+   outline: none;
+}
+
+.scroll_to_top i:after {
+   content: '';
+   display: inline-block;
+   margin-top: .9em;
+   width: 1.2em;
+   height: 1.2em;
+   border-top: 0.3em solid #000000;
+   border-right: 0.3em solid #000000;
+   -moz-transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   position: relative;
+   left: 9px;
+   outline: none;
+}
+
+.scroll_to_top i:hover {
+   border-color: #7f7f7f;
+}
+
+.scroll_to_top i:hover:after {
+   border-color: #7f7f7f;
+}
+
+/* Scroll to top */
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
